@@ -40,7 +40,7 @@ def run():
             pyautogui.click() 
             pyautogui.click()
             pyautogui.press("enter")
-        msg = "Bot By Shubhasai Activated"
+        msg = "Bot Activated"
         clngmsg = "Task Completed sir"
         wb.open("https://web.whatsapp.com/")
         time.sleep(50)
