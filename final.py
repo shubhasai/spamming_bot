@@ -52,14 +52,35 @@ def run():
             pyautogui.press("enter")
             #emoji()
 
-        # emoji()
+        #emoji()
         # pyautogui.press("enter")
         pyautogui.typewrite(clngmsg)
         pyautogui.press("enter")
+    def sticker():
+        import pyautogui
+        import time
+        time.sleep(10)
+        pyautogui.moveTo(440, 685)
+        pyautogui.click() 
+        pyautogui.moveTo(560, 700)
+        pyautogui.click()
+        time.sleep(7)
+
+        for i in range(n):
+            time.sleep(7)
+            x = 560
+            for x in range (560,1060,20):
+                pyautogui.moveTo(x, 470)
+                pyautogui.click()
+
     if ch == "WHATSAPP":
         whatsapp()
     if ch == "MEET":
         meet()
+    if ch == "STICKER IN WHATSAPP":
+        sticker()
+
+
 # bg = PhotoImage(file = "Spamming.png")
 # can1 = Canvas( m, width = 550, height= 600)
 # can1.pack(fill = "both", expand = True)
@@ -74,7 +95,7 @@ name_var=StringVar()
 passw_var=IntVar()
 variable = StringVar(m)
 variable.set("SELECT PLATFORM")
-option_menu = OptionMenu(m, variable, "WHATSAPP","MEET",command = printchoice)
+option_menu = OptionMenu(m, variable, "WHATSAPP","MEET","STICKER IN WHATSAPP",command = printchoice)
 option_menu.pack()
 def msg():
     global name
