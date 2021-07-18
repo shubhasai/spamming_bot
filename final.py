@@ -25,7 +25,7 @@ def run():
         pyautogui.press("enter")
         for i in range(n):
 
-            # pyautogui.moveTo(1070, 100)
+            # pyautogui.moveTo(1070, 100) .
             # pyautogui.click()
             pyautogui.typewrite(word)
             pyautogui.press("enter")
